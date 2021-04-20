@@ -11,8 +11,8 @@
 
     <title>%APP_TITLE%</title>
 
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="/assets/dist/reset.css">
+    <link rel="stylesheet" href="/assets/dist/app.css">
 
 </head>
 
