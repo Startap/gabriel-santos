@@ -120,6 +120,6 @@ class Application
 
     public function getKeywords(): string
     {
-        return implode($this->appKeywords, ',');
+        return implode(', ', $this->appKeywords);
     }
 }
