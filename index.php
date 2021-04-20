@@ -3,8 +3,6 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Components\Application;
-use Components\Renderer;
-use Components\Router;
 use Symfony\Component\Dotenv\Dotenv;
 
 $environmentFile = __DIR__ . '/.env';
