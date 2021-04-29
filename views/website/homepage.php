@@ -28,6 +28,7 @@ $profileInstagram = $this->language['profile']['instagram_title']
         <?php
         $buttonTemplate = <<<Template
             <a class="button button-item" target="_blank" href="%buttonHref">
+                <span class="iconify" data-icon="%buttonIcon"></span>
                 <span>%buttonTitle</span>
             </a>
         Template;
@@ -35,6 +36,7 @@ $profileInstagram = $this->language['profile']['instagram_title']
         foreach ($this->language['buttons'] as $button) {
             $currentHtmlButton = $buttonTemplate;
 
+            $currentHtmlButton = str_replace('%buttonIcon', $button['icon'], $currentHtmlButton);
             $currentHtmlButton = str_replace('%buttonTitle', $button['title'], $currentHtmlButton);
             $currentHtmlButton = str_replace('%buttonHref', $button['link'], $currentHtmlButton);
 

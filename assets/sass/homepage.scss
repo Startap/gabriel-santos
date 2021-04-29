@@ -50,6 +50,10 @@ article {
     max-width: 350px;
 
     .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
         width: 100%;
         min-height: 2rem;
         margin-bottom: 1rem;
@@ -70,12 +74,27 @@ article {
         transition: background-color 0.3s ease-in, border-color 0.4s ease-out 0s, color 0.2s ease 0.1s,
             box-shadow 0.3s linear 0s, transform 0.3s ease-in-out 0s;
 
+        .iconify {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+
+        span {
+            text-align: left;
+        }
+
         @media screen and (min-width: 768px) {
+
             &:hover {
                 background-color: $accent-color;
                 color: $default-color;
                 border-color: $default-color;
                 box-shadow: 0 11px 20px 0px rgb(0 0 0 / 25%);
+                transform: scale(1.1);
+                
+                .iconify {
+                    animation: bellElement .6s ease-in-out 0s infinite;
+                }
             }
         }
     }
@@ -339,5 +358,23 @@ footer {
     100% {
         top: 100vh;
         opacity: 0;
+    }
+}
+
+@keyframes bellElement {
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-5deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
