@@ -20,9 +20,9 @@ $profileInstagram = $this->language['profile']['instagram_title']
 
         $instagramTemplate = str_replace('%profileInstagram', $profileInstagram, $instagramTemplate);
 
-        echo $instagramTemplate;        
+        echo $instagramTemplate;
         ?>
-        </section>
+    </section>
 
     <section class="group__buttons-cta">
         <?php
@@ -43,3 +43,15 @@ $profileInstagram = $this->language['profile']['instagram_title']
         ?>
     </section>
 </section>
+
+<div id="container__animation">
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+</div>
