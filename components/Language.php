@@ -7,8 +7,8 @@ return [
 
     'buttons' => [
         [
-            'title' => 'Lance seu curso<br> do absoluto zero', 
-            'link' => 'https://www.lanceseucurso.com.br/',
+            'title' => '<small>O jogo</small><br> do Marketing', 
+            'link' => 'https://titansdigitais.com.br/ojogo-mktdigital',
             'icon' => 'ion:school-sharp'
         ],
         [
